@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url('/css/global/normalize.css');
+@import url('/css/global/adminReset.css');
+@import url('/css/global/adminCommon.css');
+@import url('/css/global/adminUI.css');
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||Popup
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#bg_popup																														{z-index:10;display:none;position:absolute;left:0;top:0;width:100%;height:100%;background:black;text-align:center;background-color:rgba( 0, 0, 0, 0.7 );}
+#default_popup																											{z-index:20;display:none;position:absolute;left:0;top:0;width:600px;background:white;}
+#default_popup dl																										{font-size:11px;}
+#default_popup dl > dt																							{padding:10px 0 10px 0;background:#0048b4;color:white;font-weight:bold;font-size:14px;text-align:center;}
+#default_popup dl > dd																							{}
+#default_popup table																								{width:100%;}
+#default_popup tr																										{}
+#default_popup td																										{padding:5px 0 5px 0;border-bottom:1px solid #cccccc;}
+#default_popup .preview																							{height:400px;text-align:center;}
+#default_popup .preview img																					{max-width:450px;max-height:350px;border:1px solid #cccccc;display:none;}
+
+#default_popup .default_popup_filebox																{}
+#default_popup .default_popup_filebox #default_popup_file						{position: absolute;width:0;height:0;padding:0;overflow:hidden;border:0;}
+#default_popup .default_popup_filebox .default_popup_upload-name		{width:330px;padding:4px;border:1px solid #777777;}
+#default_popup .default_popup_filebox label													{display:inline-block !important;position:relative !important;width:100px !important;background:#222222 !important;text-align:center;color:white !important;}
+
+
+#default_popup .field_name																					{width:23%;padding:5px 0 0 15px;color:#777777;}
+#default_popup .field_name.essential																{}
+#default_popup .field_name.essential:before													{content:"*";position:absolute;margin:0 0 0 -7px;color:red;}
+#default_popup .field_item																					{width:77%;}
+#default_popup .field_item .check_form															{padding:0px 0 0px 0;text-align:left;}
+#default_popup .field_item .check_form label												{}
+#default_popup .field_item .check_form ul														{}
+#default_popup .field_item .check_form li														{display:inline-block;width:70px;}
+#default_popup .field_item .select_form															{padding:0px 0 0px 0;text-align:left;}
+#default_popup .field_item select																		{padding:3px;width:25%;border:1px solid #eeeeee;}
+#default_popup .field_item option																		{padding:5px 0 5px 0;border-bottom:1px solid #eeeeee;}
+#default_popup .field_item input[type=text]													{padding:3px;width:99%;border:1px solid #cccccc;border:0;background:transparent;}
+#default_popup .field_item input[type=checkbox]											{margin:2px 0 0 0;}
+#default_popup .field_item span																			{padding:3px;width:99%;border:0px solid #cccccc;}
+#default_popup .field_item label																		{padding:5px;width:70%;border:0px solid #cccccc;padding-top:7px;position:absolute;color:red;z-index:5;background:white;display:none;}
+#default_popup .function																						{padding:10px 0 10px 0;text-align:center;}
+#default_popup .function input																			{padding:7px 0 7px 0;text-align:center;width:130px;}
+#default_popup .process_btn																					{padding:7px 10px 7px 10px;text-align:center;border:0;color:white;width:200px;background:#0048b4;}
+#default_popup .cancel_btn																					{padding:7px 10px 7px 10px;text-align:center;border:0;color:white;width:200px;background:#333333;}
+#default_popup .point																								{background:#ccffff;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||Detail
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.view_default																												{float:left;width:800px;}
+.view_body																													{height:800px;overflow-y:scroll;background:#eeeeee;text-align:center;}
+.view_default .preview img																					{max-width:760px;padding:20px 0 0 0;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||From
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.form_default																												{float:left;width:600px;padding:0 0 0 20px;}
+.form_item_contents textarea																				{width:100%;padding:5px;border:0;font-size:11px;height:50px;}
+.form_item_contents select																					{width:150px;padding:2px 0 0 0;margin:5px 0 5px 10px;font-size:11px;}
+
+.form_item_contents.point																						{background:#ccffff;}
+.form_item_contents .guide																					{position:absolute;margin:-17px 0 0 0;}
+.form_item_contents .guide .text																		{font-size:11px;letter-spacing:-1px;color:#777777;}
+
+.form_item_contents.device			.guide															{margin-left:170px;}
+.form_item_contents.time				.guide															{margin-left:170px;}
+.form_item_contents.start_date	.guide															{margin-left:170px;}
+.form_item_contents.end_date		.guide															{margin-left:170px;}
+
+.form_item_contents.position																				{padding:5px 0 5px 5px;}
+.form_item_contents.size																						{padding:5px 0 5px 5px;}
+.form_item_contents.position		input																{width:100px !important;padding:2px;border:1px solid #777777;}
+.form_item_contents.size				input																{width:100px !important;padding:2px;border:1px solid #777777;}
+
+.form_item_contents .form_field_name																{display:inline-block;font-size:11px;margin:0 5px 0 5px;color:#777777;}
+
+.form_default .filebox input[type="file"]														{width:0;height:0;padding:0;overflow:hidden;border:0;}
+.form_default .filebox label																				{display: inline-block;width:110px;height:30px;font-size:14px;padding:7px 0 5px 0;color:#ffffff;vertical-align:middle;background-color:#777777;cursor:pointer;border:1px solid #ebebeb;border-radius:0;text-align:center;}
+.form_default .filebox .upload-name																	{display: inline-block;width:400px;height:30px;font-size:14px;padding:5px 0 5px 10px;color:#777777;vertical-align:middle;background-color:#cccccc;border:1px solid #ebebeb;border-radius:0;}
+
+.form_default .thumbnail																						{text-align:center;}
+.form_default .thumbnail img																				{max-width:500px;padding:20px 0 0 0;}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||List
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.list_popup																													{float:left;width:420px;padding:0 0 0 20px;}
+.list_item_contents																									{display:block;width:95%;padding:0 0 0 5%;text-align:left;}
+
+.list_popup .list_item_1																						{width:35px;display:none;}
+.list_popup .list_item_2																						{width:30px;}
+.list_popup .list_item_3																						{width:300px;}
+.list_popup .list_item_4																						{width:*;}
+
+.list_popup .list_body																							{}
+.list_popup .list_body .list_item_1																	{}
+.list_popup .list_body .list_item_2																	{}
+.list_popup .list_body .list_item_3																	{cursor:pointer;}
+.list_popup .list_body .list_item_3 img															{max-width:300px;}
+.list_popup .list_body .list_item_3 .information										{position:relative;padding:10px 0 10px 10px;margin:0 0 0 0;text-align:left;background:rgba(0,0,0,.8);}
+.list_popup .list_body .list_item_3 .information span								{display:block;padding:0 0 5px 0;color:white;font-size:12px;}
+.list_popup .list_body .list_item_3 .information span:last-child		{padding-bottom:0;}
+.list_popup .list_body .list_item_3 .information .name:before				{display:inline-block;content:"제목:";color:#cccccc;padding-right:5px;}									
+.list_popup .list_body .list_item_3 .information .period:before			{display:inline-block;content:"기간:";color:#cccccc;padding-right:5px;}
+.list_popup .list_body .list_item_3 .information .state:before			{display:inline-block;content:"상태:";color:#cccccc;padding-right:5px;}
+.list_popup .list_body .list_item_3 .information .name							{}									
+.list_popup .list_body .list_item_3 .information .period						{}
+.list_popup .list_body .list_item_3 .information .state							{}
+.list_popup .list_body .list_item_4																	{}
+.list_popup .list_body .list_item_4	a																{background:black;padding:3px;color:white;}
+
+.list_popup .list_page																							{position:relative;z-index:10;margin:-40px 0 0 0;height:40px;padding:10px 0 5px 5px;background:rgba(256,256,256,1);border:1px solid #222222;}
+.list_popup .list_page ul																						{}
+.list_popup .list_page li																						{display:inline-block;margin:0 5px 0 0;}
+.list_popup .list_page li > a																				{display:inline-block;padding:3px 0 3px 0;width:25px;border:1px solid #eeeeee;text-align:center;}
+.list_popup .list_page .on																					{background:yellow;}
+
+
+.list_popup .list_function																					{padding:10px 0 0 0;}
+.list_popup .list_function .ltItem																	{float:left;width:500px;}
+.list_popup .list_function .rtItem																	{float:right;width:400px;text-align:right;}
+
+
+#list_images ul																											{padding:5px;text-align:center;}
+#list_images table																									{border:1px solid #cccccc;margin:0 0 5px 0;width:100%;}
+#list_images img																										{width:150px;margin:0 10px 0 0;}
+#list_images a																											{font-size:11px;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||Side
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/

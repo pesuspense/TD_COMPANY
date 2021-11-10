@@ -1,0 +1,44 @@
+ [ eIpaddress:61.73.48.212| eSession:424801356| file:/process/admin/login/default.asp| num:-2147217843| eSource:Microsoft OLE DB Provider for SQL Server| eDate:2021-08-23 오후 3:35:50 ]  사용자 'gajileonhan'이(가) 로그인하지 못했습니다.
+Select 																														
+ AA.memberNum																											
+,AA.name 																													
+,BB.id																															
+,BB.pw																															
+From				member_default As AA																		
+Inner Join	member_account As BB On AA.memberNum = BB.memberNum			
+Where isNull(BB.id,'')		<> ''																			
+And		isNull(BB.pw,'')		<> ''																		
+And		isNull(AA.state,'')	<> 'd'																	
+And		BB.id								= 'gajileonhan'														
+
+ [ eIpaddress:61.73.48.212| eSession:424801356| file:/process/admin/login/default.asp| num:-2147217843| eSource:Microsoft OLE DB Provider for SQL Server| eDate:2021-08-23 오후 3:36:03 ]  사용자 'gajileonhan'이(가) 로그인하지 못했습니다.
+Select 																														
+ AA.memberNum																											
+,AA.name 																													
+,BB.id																															
+,BB.pw																															
+From				member_default As AA																		
+Inner Join	member_account As BB On AA.memberNum = BB.memberNum			
+Where isNull(BB.id,'')		<> ''																			
+And		isNull(BB.pw,'')		<> ''																		
+And		isNull(AA.state,'')	<> 'd'																	
+And		BB.id								= 'gajileonhan'														
+
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!
+
+아이디를 입력하세요!

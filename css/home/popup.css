@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------------
+||Common
+--------------------------------------------------------------------*/
+#popup {position:absolute;top:0;left:0;}
+#popup .item {position:absolute;z-index:10000000;}
+#popup .bottom {background:#000000;}
+#popup .bottom .left {display:inline-block;width:47%;vertical-align:middle;padding:0 0 0 1%;}
+#popup .bottom .right {display:inline-block;width:47%;vertical-align:middle;padding:0 1% 0 0;}
+
+/*--------------------------------------------------------------------
+||MO
+--------------------------------------------------------------------*/
+@media screen and (max-width: 768px){
+
+	#popup {}
+	#popup .bottom {height:40px;line-height:40px;}
+	#popup .bottom a {color:#cccccc;}
+	#popup .bottom .left {display:inline-block;color:#cccccc;font-size:4vw;text-align:left;}
+	#popup .bottom .right {display:inline-block;color:#cccccc;font-size:4vw;text-align:right;}
+
+/*
+	#popup .item1 {display:none;width:80vw;margin:30vw 0 0 10vw;}
+	#popup .item1 .top {}
+	#popup .item1 .body {}
+	#popup .item1 .body img {width:100%;}
+	#popup .item1 .bottom {}
+	#popup .item1 .bottom .left {}
+	#popup .item1 .bottom .right {}
+*/
+
+}
+
+/*--------------------------------------------------------------------
+||PC
+--------------------------------------------------------------------*/
+@media screen and (min-width: 768px){
+
+	#popup {}
+	#popup .bottom {height:40px;line-height:40px;}
+	#popup .bottom a {color:#cccccc;}
+	#popup .bottom .left {display:inline-block;color:#cccccc;font-size:14px;text-align:left;}
+	#popup .bottom .right {display:inline-block;color:#cccccc;font-size:14px;text-align:right;}
+
+/*
+	#popup .item1 {display:none;width:500px;margin:20vh 0 0 70vw;}
+	#popup .item1 .top {}
+	#popup .item1 .body {}
+	#popup .item1 .body img {}
+	#popup .item1 .bottom {}
+	#popup .item1 .bottom .left {}
+	#popup .item1 .bottom .right {}
+*/
+
+}
+
+	

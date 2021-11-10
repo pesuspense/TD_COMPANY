@@ -1,0 +1,969 @@
+@charset "UTF-8";
+@import url('/css/global/normalize.css');
+@import url('../global/reset.css');
+@import url('../global/fullpage.css');
+@import url('/css/global/fontawesome.css');
+@import url('/css/global/twentytwenty.css');
+@import url('/css/home/popup.css');
+
+/*
+span,div,p,a,h1, h2, h3, h4, h5, h6{transform: skew(-0.001deg);}		//나눔 폰트 깨짐 현상 해결책
+*/
+
+/*--------------------------------------------------------------------
+||공통설정
+--------------------------------------------------------------------*/
+	#msg				{position:fixed;z-index:10000;}
+	#wrap .fp-tableCell {vertical-align:top;}
+
+	body {
+		width:100%;
+	}
+
+
+/*--------------------------------------------------------------------
+||ANIMATION
+--------------------------------------------------------------------*/
+@keyframes moveRight {
+	from {
+		transform:translateX(-50px);
+		opacity:0;
+	}
+	to {
+		transform:translateX(0);
+		opacity:1;
+	}
+}
+.moveRight {
+	animation:moveRight 1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes moveLeft {
+	from {
+		transform:translateX(50px);
+		opacity:0;
+	}
+	to {
+		transform:translateX(0);
+		opacity:1;
+	}
+}
+.moveLeft {
+	animation:moveLeft 1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes moveUp {
+	from {
+		transform:translateY(100px);
+		opacity:0;
+	}
+	to {
+		transform:translateY(0);
+		opacity:1;
+	}
+}
+.moveUp {
+	animation:moveUp 1s;
+	animation-fill-mode:forwards;
+}
+
+/* slide 관련 animation */
+@keyframes slideActionLeft {
+	from {
+		opacity:0;
+		transform:translateX(-30px);
+	}
+	to {
+		opacity:1;
+		transform:translateX(0);
+	}
+}
+.slideActionLeft {
+	animation:slideActionLeft 1s;
+}
+
+@keyframes slideAcitionRight {
+	from {
+		opacity:0;
+		transform:translateX(30px);
+	}
+	to {
+		opacity:1;
+		transform:translateX(0);
+	}
+}
+.slideActionRight {
+	animation:slideActionRight 1s;
+}
+
+.selected {
+	opacity:1;
+}
+/* slide 관련 animation END */
+
+@keyframes textFall {
+	from {
+		opacity:0;
+		transform:translateY(-50px);
+	}
+	to {
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+.textFall {
+	display:inline-block;
+	animation:textFall 0.6s cubic-bezier(0.4,0,0.2,1) both;
+	animation-fill-mode:forwards;
+}
+
+@keyframes changeColor {
+    from {
+        color:#262626;
+    }
+    to {
+        color:#c8a063;
+    }
+}
+.changeColor {
+    animation:changeColor 1s;
+    animation-fill-mode:forwards;
+}
+
+/*--------------------------------------------------------------------
+||MO
+--------------------------------------------------------------------*/
+@media screen and (max-width: 768px){
+	/************************ 배경이미지 설정 ************************/
+	#section0		{background-image:url('/resource/image/home/bg0.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section1		{background-image:url('/resource/image/home/mo/01.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center center}
+	#section2		{background-image:url('/resource/image/home/mo/02.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section3		{background-image:url('/resource/image/home/mo/03.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section4		{background-image:url('/resource/image/home/mo/04.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section5		{background-image:url('/resource/image/home/mo/05.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section6		{background-image:url('/resource/image/home/mo/06.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section7		{background-image:url('/resource/image/home/mo/07.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section8		{background-image:url('/resource/image/home/mo/08.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section9		{background-image:url('/resource/image/home/mo/09.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section10		{background-image:url('/resource/image/home/mo/10.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section11		{background-image:url('/resource/image/home/mo/11.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	#section12		{background-image:url('/resource/image/home/mo/12.jpg'); background-repeat:no-repeat; background-size:cover; background-position:left center;}
+	/************************ 배경이미지 설정 END ************************/
+
+	/************************ 모바일 공통 설정 ************************/
+	body	{min-height:100vh;}
+	
+	#wrap .width_area {width:100%; margin:0 auto;}
+	#wrap .width_area:after {display:block; clear:both; content:"";}
+
+	body 	.pbr {display:none;}
+	body 	.mbr {display:block;}
+	/************************ 모바일 공통 설정 END ************************/
+
+	
+	/************************ 상단 고정 영역 ************************/
+	#gnb {
+		position:fixed;
+		left:0;
+		top:0;
+		z-index:1001;
+		width:100vw;
+		height:17.79vw;
+		display:none;
+	}
+	#gnb .gnb_group	{
+		position:relative;
+		font-size:0;
+		width:100vw;
+	}
+
+	/* 로고 */
+	#gnb .logo_area	{
+		position:absolute;
+		z-index:101;
+		display:inline-block;
+		width:29.17vw;
+		height:10.01vw;
+		background:transparent;
+		margin-left:3.89vw;
+	}
+	#gnb .logo_area:before {
+		display:inline-block;
+		height:100%;
+		vertical-align:middle;
+		content:"";
+	}
+	#gnb .logo_area img	{
+		width:29.17vw;
+		vertical-align:middle;
+	}
+	
+	/* 메뉴 */
+	#gnb .menu_area {
+		position:absolute;
+		left:0;
+		top:10.01vw;
+		display:block;
+		width:100vw;
+		height:7.78vw;
+		background-color:#589696;
+		line-height:7.78vw;
+	}
+	#gnb .menu_area ul {
+		font-size:0;
+		text-align:center;
+	}
+	#gnb .menu_area ul li {
+		display:inline-block;
+		vertical-align:middle;
+	}
+	#gnb .menu_area ul li:after {
+		display:inline-block;
+		width:0px;
+		height:2.33vw;
+		border-right:1px solid #fff;
+		margin:0 5.76vw;
+		content:"";
+	}
+	#gnb .menu_area ul li:last-child:after {
+		border-right:none;
+		margin:0;
+		content:"";
+	}
+	#gnb .menu_area ul li a {
+		color:#fff;
+		font-size:3.52vw;
+	}
+	#gnb .menu_area .linkOn	a {
+		font-weight:600;
+		font-size:3.52vw;
+		color:#55494e;
+		transition:all .8s;
+	}
+
+	/* 연락처 */
+	#gnb .contract_area {
+		position:absolute;
+		right:0;
+		top:0;
+		display:block;
+		width:100vw;
+		height:10.01vw;
+		line-height:10.01vw;
+		background-color:#fff;
+		padding-right:3.89vw;
+		text-align:right;
+	}
+	#gnb .contract_area a:first-child {
+		display:none;
+	}
+	#gnb .contract_area a:last-child {
+		font-size:4.36vw;
+		color:#589696;
+	}
+	/************************ 상단 고정 영역 END ************************/
+
+	
+	
+	/************************ SECTION 1 ************************/
+	#section1 .visual_img {
+		display:none;
+	}
+
+	/* 제목 */
+	#section1 .element .introduce dl {
+		display:inline-block;
+		width:100%;
+	}
+	#section1 .element .introduce dl > dt .line1 {
+		font-size:3.82vw;
+		color:#363636;
+	}
+	#section1 .element .introduce dl > dt .line2 {
+		margin-top:1.99vw;
+		font-size:8.53vw;
+		color:#55494e;
+	}
+	#section1 .element .introduce dl > dt .line2  span {
+		font-size:8.53vw;
+		color:#589696;
+	}
+
+	/* 내용 */
+	#section1 .element .introduce dl > dd .box {
+		width:86.3vw;
+		margin:0 auto;
+	}
+
+	#section1 .element .introduce dl > dd .box .summary {
+		margin-top:5.08vw;
+		line-height:1.2em;
+		width:86.3vw; font-family:"Nexon Lv2 Gothic OTF";
+	}
+	#section1 .element .introduce dl > dd .box .summary span {
+		font-size:2.97vw;
+	}
+	/************************ SECTION 1 END ************************/
+
+
+
+	/************************ SECTION 2 ************************/
+	#section2 .visual_img {
+		position:absolute;
+		left:0;
+		top:0;
+		width:100vw;
+		height:100vh;
+		overflow:hidden;
+	}
+	/************************ SECTION 2 END ************************/	
+	
+
+
+
+	/*** SECTION End ***/
+	#section13 {height:20vw!important; background:#eeeeee;}
+	#section13 .section_group {width:68vw; margin:0 auto;}
+	#section13 .logo {display:none;}
+	#section13 .information {text-align:left; padding-top:5vw; padding-bottom:5vw;}
+	#section13 .information span {display:block; font-family:"Nexon Lv2 Gothic OTF L"; font-size:2.67vw; ;line-height:1.5em;}
+	#section13 .information span:last-child {color:#a3a3a3;}
+	/*** SECTION End ***/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	/************************ 섹션 크기 설정 ************************/
+	#section0 {display:block;}
+	#section1 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section2 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section3 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section4 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section5 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section6 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section7 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section8 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section9 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section10 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section11 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	#section12 {display:block; min-height:100vh; width:100vw; overflow:hidden;}
+	/************************ 섹션 크기 설정 END ************************/
+
+}
+
+
+/*--------------------------------------------------------------------
+||PC
+--------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+	/************************ 배경이미지 설정 ************************/
+	
+	#section1		{background-image:url('../../resource/image/home/bg/bg01.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	/*#section2		{background-image:url('/resource/image/home/bg2.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section3		{background-image:url('/resource/image/home/bg3.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section4		{background-image:url('/resource/image/home/bg4.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section5		{background-image:url('/resource/image/home/bg5.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section6		{background-image:url('/resource/image/home/bg6.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -9.5vh;}
+	#section7		{background-image:url('/resource/image/home/bg7.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section8		{background-image:url('/resource/image/home/bg8.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section9		{background-image:url('/resource/image/home/bg9.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section10		{background-image:url('/resource/image/home/bg10.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section11		{background-image:url('/resource/image/home/bg11.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;}
+	#section12		{background-image:url('/resource/image/home/bg12.jpg');	background-repeat:no-repeat;background-size:cover;background-position:left -8.5vh;} */
+	/************************ 배경이미지 설정 END ************************/
+
+	/************************ PC 공통 설정 ************************/
+	body {font-family:"Nexon Lv2 Gothic";}
+	body .mbr {display:none;}
+	body .pbr {display:block;}
+	
+	#wrap .width_area {width:1280px; margin:0 auto; background:transparent;}
+	#wrap .width_area:after {display:block; clear:both; content:"";}
+
+	#container .section.default {width:100%; height:100vh; overflow:hidden;}
+	/************************ PC 공통 설정 END ************************/
+	
+
+
+
+	/************************ 상단 고정 영역 ************************/
+	#gnb {
+		position:fixed;
+		z-index:100;
+		width:100%;
+		background-color:#c8a063;
+		font-family:"Nexon Lv2 Gothic B";
+		color:#fff;
+	}
+	#gnb .gnb_group	{
+		position:relative;
+		font-size:0;
+		width:1280px;
+		margin:0 auto;
+	}
+
+	/* 로고영역 */
+	#gnb .logo_area	{
+		position:absolute;
+		z-index:101;
+		display:inline-block;
+		width:200px;
+		height:90px;
+	}
+	
+	#gnb .logo_area img	{
+		width:200px;
+		transform:translateY(22px);
+	}
+
+	/* 메뉴 영역 */
+	#gnb .menu_area {
+		display:inline-block;
+		width:100%;
+		height:90px;
+		vertical-align:middle;
+		text-align:center;
+
+	}
+	#gnb .menu_area ul {
+		display:inline-block;
+		vertical-align:middle;
+		transform:translate(-25px, 25px);
+	}
+	#gnb .menu_area li {
+		display:inline-block;
+		vertical-align:middle;
+		background:transparent;
+	}
+	#gnb .menu_area li:after {
+		display:inline-block;
+		margin:0 24px 0 24px;
+		font-size:0;
+		height:25px;
+		width:1px;
+		border:0;
+		content:"";
+		text-align:center;
+		background:#fff;
+		transform:translate(0,5px);
+	}
+	#gnb .menu_area li:last-child:after {
+		margin:0 0 0 0;
+		background:transparent;
+	}
+	#gnb .menu_area a {
+		font-size:23px;
+		color:#fff;
+		border:0px solid transparent;
+		transition:all .8s;
+	}
+	#gnb .menu_area .linkOn	a {
+		font-size:21px;
+		color:#589696;
+		transition:all .8s;
+	}
+
+	/* 연락처 */
+	#gnb .contract_area {
+		position:absolute;
+		display:inline-block;
+		right:0;
+		top:50%;
+		transform:translate(0, -50%);
+	}
+	
+	#gnb .contract_area a {
+		background:url('../../resource/image/icon/전화.png') no-repeat left center;
+		background-size:32px;
+		text-indent:42px;
+		margin:0 0 0 10px;
+		display:inline-block;
+		vertical-align:middle;
+		color:#fff;
+		line-height:30px;
+		font-size:30px;
+	}
+	/************************ 상단 고정 영역 END ************************/
+
+	/************************ 하단 고정 영역 ************************/
+	#bottom_kakao {
+		position:fixed;
+		left:0;
+		top:100vh;
+		width:100%;
+		height:90px;
+		line-height:90px;
+		transform:translateY(-90px);
+		background-color:#7f6d51;
+		font-size:30px;
+		font-family:"GCBatang";
+		color:#fff;
+		z-index:9999;
+	}
+	#bottom_kakao > p {
+		width:1280px;
+		height:100%;
+		margin:0 auto;
+	}
+	#bottom_kakao > p > span {
+		font-family:"GCBatang B";
+	}
+
+	#bottom_kakao > p > a {
+		display:inline-block;
+		margin-left:130px;
+		width:257px;
+		height:42px;
+		line-height:42px;
+		font-family:"Nexon Lv2 Gothic";
+		background-color:#615440;
+		font-size:26px;
+		border-radius:30px;
+		color:#fff;
+		text-indent:60px;
+		position:relative;
+	}
+	#bottom_kakao > p > a:before {
+		content:"";
+		position:absolute;
+		display:inline-block;
+		left:-2px;
+		top:-3px;
+		width:49px;
+		height:49px;
+		background:url('../../resource/image/icon/카카오톡.png') no-repeat center;
+		background-size:30px;
+		background-color:#433b2f;
+		border-radius:50%;
+	}
+	/************************ 하단 고정 영역 END ************************/
+	
+
+
+	/************************ SECTION 1 ************************/
+	/* 플로팅 이미지 */
+	/* #section1 .visual_img {
+		position:absolute;
+		left:0;
+		top:0;
+		width:100vw;
+		height:100vh;
+		overflow:hidden;
+	
+	}
+	#section1 .visual_img .item1 {
+		position:absolute;
+		left:50%;
+		top:18.7vh;
+		transform:translate(-302px);
+		opacity:0;
+	}
+	#section1 .visual_img .item2 {
+		position:absolute;
+		left:50%;
+		top:18.7vh;
+		transform:translate(158px);
+		opacity:0;
+	} */
+
+	/* 제목 */
+	#sectino1 .section_group {
+		width:1280px;
+	}
+	#section1 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section1 .element .introduce dl {
+		width:100%;
+	}
+	#section1 .element .introduce dl > dt .line1 {
+		margin-top:64px;
+		font-size:57px;
+		color:#4e483f;
+		opacity:0;
+	}
+	#section1 .element .introduce dl > dt .line1 > span {
+		font-family:"Nexon Lv2 Gothic B";
+		color:#c8a063;
+	}
+
+	#section1 .element .introduce dl > dt .line2 {
+		margin-top:14px;
+		font-size:25px;
+		font-family:"GCBatang";
+		color:#aa8c5e;
+		animation-delay:0.5s;
+		opacity:0;
+	}
+	#section1 .element .introduce dl > dt .line2 > span {
+		position:relative;
+		display:inline-block;
+	}
+	#section1 .element .introduce dl > dt .line2 > span:before {
+		content:"";
+		position:absolute;
+		left:0;
+		top:15px;
+		width:100%;
+		height:15px;
+		background-color:rgba(127,109,81,0.15);
+	}
+	
+	
+	/* 내용 */
+	#section1 .element .ㅇintroduce dl > dd .box {
+		width:1280px;
+		margin:0 auto;
+	}
+	
+	#section1 .element .introduce dl > dd .box .summary {
+		margin-top:47px;
+		width:100%;		
+	}	
+	#section1 .element .introduce dl > dd .box .summary > ul {
+		width:790px;
+		overflow:hidden;
+		opacity:0;
+	}
+	#section1 .element .introduce dl > dd .box .summary > ul > li {
+		width:100%;
+		height:85px;
+		position:relative;
+		padding:10px 0;
+		padding-left:90px;
+	}
+	#section1 .element .introduce dl > dd .box .summary > ul > li:nth-child(1):before {
+		content:"";
+		position:absolute;
+		left:0;
+		top:2px;
+		display:inline-block;
+		width:70px;
+		height:70px;
+		border-radius:50%;
+		background:url('../../resource/image/home/section1/icon1.png') no-repeat center;
+		background-size:75%;
+		background-color:#c8a063;
+	}
+	#section1 .element .introduce dl > dd .box .summary > ul > li:nth-child(2)::before {
+		content:"";
+		position:absolute;
+		left:0;
+		top:2px;
+		display:inline-block;
+		width:70px;
+		height:70px;
+		border-radius:50%;
+		background:url('../../resource/image/home/section1/icon2.png') no-repeat center;
+		background-size:75%;
+		background-color:#937951;
+	}
+	#section1 .element .introduce dl > dd .box .summary > ul > li:nth-child(3)::before {
+		content:"";
+		position:absolute;
+		left:0;
+		top:2px;
+		display:inline-block;
+		width:70px;
+		height:70px;
+		border-radius:50%;
+		background:url('../../resource/image/home/section1/icon3.png') no-repeat center;
+		background-size:75%;
+		background-color:#c8a063;
+	}
+	#section1 .element .introduce dl > dd .box .summary > ul > li:nth-child(4)::before {
+		content:"";
+		position:absolute;
+		left:0;
+		top:2px;
+		display:inline-block;
+		width:70px;
+		height:70px;
+		border-radius:50%;
+		background:url('../../resource/image/home/section1/icon4.png') no-repeat center;
+		background-size:75%;
+		background-color:#937951;
+	}
+
+	#section1 .element .introduce dl > dd .box .summary > ul > li > h4 {
+		font-size:28px;
+		font-family:"Nexon Lv2 Gothic B";
+		color:#c8a063;
+		height:34px;
+	}
+	#section1 .element .introduce dl > dd .box .summary > ul > li > h4 span {
+		color:rgba(78,72,63,.2);
+	}
+	#section1 .element .introduce dl > dd .box .summary > ul > li > p {
+		font-size:22px;
+		color:#4e483f;
+	}
+	/************************ SECTION 1 END ************************/
+
+
+
+	/************************ SECTION 2 ************************/
+	/* 제목 */
+	#section2 .section_group {
+		width:1280px;
+	}
+	#section2 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section2 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 2 END ************************/
+
+	/************************ SECTION 3 ************************/
+	/* 제목 */
+	#section3 .section_group {
+		width:1280px;
+	}
+	#section3 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section3 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 3 END ************************/
+
+	/************************ SECTION 4 ************************/
+	/* 제목 */
+	#section4 .section_group {
+		width:1280px;
+	}
+	#section4 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section4 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 4 END ************************/
+
+	/************************ SECTION 5 ************************/
+	/* 제목 */
+	#section5 .section_group {
+		width:1280px;
+	}
+	#section5 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section5 .element .introduce dl {
+		width:100%;
+	}
+	#section5 .element .introduce dl > dt .line2 > span{
+		opacity:0;
+	}
+
+	/************************ SECTION 5 END ************************/
+
+	/************************ SECTION 6 ************************/
+	/* 제목 */
+	#section6 .section_group {
+		width:1280px;
+	}
+	#section6 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section6 .element .introduce dl {
+		width:100%;
+	}
+
+	#section6 .element .introduce dl > dt .line2 > span {
+		opacity:0;
+	}
+	/************************ SECTION 6 END ************************/
+
+	/************************ SECTION 7 ************************/
+	/* 제목 */
+	#section7 .section_group {
+		width:1280px;
+	}
+	#section7 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section7 .element .introduce dl {
+		width:100%;
+	}
+
+	#section7 .element .introduce dl > dt .line2 > span {
+		opacity:0;
+	}
+	/************************ SECTION 7 END ************************/
+
+	/************************ SECTION 8 ************************/
+	/* 제목 */
+	#section8 .section_group {
+		width:1280px;
+	}
+	#section8 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section8 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 8 END ************************/
+
+	/************************ SECTION 9 ************************/
+	/* 제목 */
+	#section9 .section_group {
+		width:1280px;
+	}
+	#section9 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section9 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 9 END ************************/
+
+	/************************ SECTION 10 ************************/
+	/* 제목 */
+	#section10 .section_group {
+		width:1280px;
+	}
+	#section10 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section10 .element .introduce dl {
+		width:100%;
+	}
+    #section10 .element .introduce dl > dd .box .summary > h3 > span > span {
+        opacity:0;
+    }
+	/************************ SECTION 10 END ************************/
+
+	/************************ SECTION 11 ************************/
+	/* 제목 */
+	#section11 .section_group {
+		width:1280px;
+	}
+	#section11 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section11 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 11 END ************************/
+
+	/************************ SECTION 12 ************************/
+	/* 제목 */
+	#section12 .section_group {
+		width:1280px;
+	}
+	#section12 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section12 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 12 END ************************/
+
+	/************************ SECTION 13 ************************/
+	/* 제목 */
+	#section13 .section_group {
+		width:1280px;
+	}
+	#section13 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section13 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 13 END ************************/
+
+	/************************ SECTION 14 ************************/
+	/* 제목 */
+	#section14 .section_group {
+		width:1280px;
+	}
+	#section14 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section14 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 14 END ************************/
+
+	/************************ SECTION 15 ************************/
+	/* 제목 */
+	#sectino15 .section_group {
+		width:1280px;
+	}
+	#section15 .element .introduce:before {
+		display:block;
+		height:16.67vh;
+		max-height:180px;
+		content:"";
+	}
+	#section15 .element .introduce dl {
+		width:100%;
+	}
+	/************************ SECTION 15 END ************************/
+
+
+	
+
+
+
+	/*** SECTION End ***/
+	#section16 {height:25vh!important; background:#eeeeee;}
+	#section16 .section_group {width:1320px; margin:0 auto;}
+	#section16 .section_group:before {clear:both; display:block; content:""; padding-top:40px;}
+	#section16 .logo {float:left; width:30%; text-align:center;}
+	#section16 .logo:after {content:""; display:block; clear:both;}
+	#section16 .logo img {width:200px; margin:10px 0 0 0;}
+	#section16 .information {float:left; width:70%; text-align:left;}
+	#section16 .information:after {content:""; display:block; clear:both;}
+	#section16 .information span {display:block; font-family:"Nexon Lv2 Gothic OTF L"; font-size:16px;line-height:24px;}
+	#section16 .information span.mbr {display:none;}
+	#section16 .information span:last-child {color:#a3a3a3;}
+	/*** SECTION End ***/
+
+
+}
+

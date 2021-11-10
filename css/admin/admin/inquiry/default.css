@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import url('/css/global/normalize.css');
+@import url('/css/global/adminReset.css');
+@import url('/css/global/adminCommon.css');
+@import url('/css/global/adminUI.css');
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||From
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.form_default													{float:left;width:600px;}
+.form_default .view										{display:inline-block;padding:7px 0 7px 10px;}
+.form_default .state_button						{border:0;background:#eeeeee;color:#777777;padding:3px;width:40px;font-size:11px;border:1px solid #cccccc;}
+.form_default #form_state							{display:inline-block;}
+.form_default #form_state li					{padding:0 0 0 0;}
+.form_item_contents textarea					{width:100%;padding:10px;border:0;font-size:11px;min-height:295px;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||List
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.list_inquiryDefault									{float:left;width:800px;padding:0 0 0 20px;}
+.list_item_contents										{display:block;width:95%;padding:0 0 0 5%;text-align:left;}
+
+.list_inquiryDefault .list_item_1			{width:20px;}
+.list_inquiryDefault .list_item_2			{width:30px;}
+.list_inquiryDefault .list_item_3			{width:80px;}
+.list_inquiryDefault .list_item_4			{width:120px;}
+.list_inquiryDefault .list_item_5			{width:120px;}
+.list_inquiryDefault .list_item_6			{width:240px;}
+.list_inquiryDefault .list_item_7			{width:110px;}
+.list_inquiryDefault .list_item_8			{width:*;}
+
+#list_inquiryDefault .list_item_3			{text-align:left;}
+#list_inquiryDefault .list_item_4			{text-align:left;color:black;}
+#list_inquiryDefault .list_item_5			{text-align:left;}
+#list_inquiryDefault .list_item_6			{text-align:left;}
+#list_inquiryDefault tr:last-child td	{border-bottom:0;}
+
+#list_inquiryDefault .stateW					{color:red;}
+#list_inquiryDefault .stateR					{color:blue;}
+#list_inquiryDefault .stateC					{color:#777777;}
+
+
+
+
+.list_inquiryDefault .list_function					{padding:10px 0 0 0;}
+.list_inquiryDefault .list_function .ltItem	{float:left;width:500px;}
+.list_inquiryDefault .list_function .rtItem	{float:right;width:300px;text-align:right;}
+
+#page_inquiryDefault									{position:absolute;}
+#page_inquiryDefault ul								{padding:3px 0 3px 0;border-bottom:0px solid #cccccc;}
+#page_inquiryDefault li								{display:inline-block;}
+#page_inquiryDefault a								{display:inline-block;margin:0 3px 0 0;padding:10px 0 10px 0;width:30px;text-align:center;border:1px solid #cccccc}
+#page_inquiryDefault .on							{background:#eeeeee;}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||Side
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/

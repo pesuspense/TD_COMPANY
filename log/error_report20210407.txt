@@ -1,0 +1,13 @@
+ [ eIpaddress:112.187.232.133| eSession:726594602| file:/process/admin/login/default.asp| num:-2147217843| eSource:Microsoft OLE DB Provider for SQL Server| eDate:2021-04-07 오후 5:32:42 ]  사용자 'gjdental2875l'이(가) 로그인하지 못했습니다.
+Select 																														
+ AA.memberNum																											
+,AA.name 																													
+,BB.id																															
+,BB.pw																															
+From				member_default As AA																		
+Inner Join	member_account As BB On AA.memberNum = BB.memberNum			
+Where isNull(BB.id,'')		<> ''																			
+And		isNull(BB.pw,'')		<> ''																		
+And		isNull(AA.state,'')	<> 'd'																	
+And		BB.id								= 'manager777'														
+

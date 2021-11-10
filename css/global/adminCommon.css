@@ -1,0 +1,39 @@
+*:focus{
+	outline: none; 
+}
+
+.popupBg{
+				z-index:10;position:absolute;left:0;top:0;width:100%;height:100%;display:block;
+				background:black;
+				filter:alpha(opacity:'80');
+				opacity:0.8;
+				-moz-opacity:0.8;
+				-khtml-opacity:0.8;				
+				
+}
+
+.popup	{z-index:15;position:absolute;left:0;top:0;width:100%;height:100%;display:block;display:none;}
+.popup .box			{width:500px;height:500px;margin:150px auto;background:white;border:1px solid black;}
+.popup .head		{}
+.popup .body		{}
+.popup .bottom	{}
+
+.mask	{
+				display:inline-block;z-index:10;position:absolute;background:black;text-align:center;vertical-align:bottom;
+				filter:alpha(opacity:'60');
+				opacity:0.6;
+				-moz-opacity:0.6;
+				-khtml-opacity:0.6;
+				display:none;
+			}
+
+#popup							{position:absolute;left:0;top:0;width:100%;height:100%;background:black;z-index:100;display:none;}
+#popup .message			{width:300px;background:white;margin:350px auto 0 auto;padding:30px;text-align:center;border:1px solid black;}
+
+.opacity						{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";      /* IE 8 */
+	filter: alpha(opacity=80);																							/* IE 5-7 */
+	-moz-opacity: 0.8;																											/* Netscape */
+	-khtml-opacity: 0.8;																										/* Safari 1.x */
+	opacity: 0.8;																														/* Good browsers */
+}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url('/css/global/normalize.css');
+@import url('/css/global/adminReset.css');
+@import url('/css/global/adminCommon.css');
+@import url('/css/global/adminUI.css');
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||Layout
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.preview											{float:left;width:600px;margin:0 20px 0 0;}
+.detail												{float:left;width:600px;margin:0 20px 0 0;}
+.list													{float:left;width:600px;margin:0 0 0 0;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||preview
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#preview_contents							{padding:10px 0 0 0;line-height:16px;}
+#preview_contents img					{max-width:600px;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||detail
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.detail ul										{background:#777777;}
+.detail li										{display:inline-block;}
+.detail li > a								{display:inline-block;padding:7px 0 7px 0;width:100px;color:white;text-align:center;}
+.detail .on										{background:black;}
+
+.detail .contents							{display:;}
+.detail .contents table				{width:100%;}
+.detail .contents tr					{}
+.detail .contents td					{}
+.detail .contents .name				{padding:7px 0 7px 7px;width:100%;border:0;border-bottom:1px solid #777777;font-size:11px;display:none;}
+.detail .contents .title			{padding:7px 0 7px 7px;width:100%;border:0;border-bottom:1px solid #777777;font-size:11px;}
+.detail .contents .contents		{padding:7px 0 7px 7px;width:100%;height:420px;border:0;border-bottom:1px solid #777777;font-size:11px;line-height:16px;}
+.detail .contents .keyword		{padding:7px 0 7px 7px;width:100%;height:36px;border:0;border-bottom:1px solid #777777;font-size:11px;}
+
+.detail .button								{padding:7px;border:0;background:#555555;color:white;}
+.detail .images								{display:none;}
+
+.images ul										{background:white;}
+.images table									{width:100%;background:white;margin:0 0 10px 0;border:1px solid #cccccc;}
+.images td										{padding:5px;}									
+
+.imgItem1											{width:30px;text-align:center;}
+.imgItem2											{width:160px;}
+.imgItem2 img									{width:150px;}
+.imgItem3											{width:340px;line-height:16px;font-size:11px;}
+.imgItem4											{width:*;}
+.imgItem4 a										{color:#777777;font-size:11px;}
+
+#list_images_form table				{width:100%;background:white;margin:0 0 10px 0;border-bottom:1px solid #cccccc;}
+#list_images_form table				{padding:5px;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||List
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.list	.item1									{width:20px;}
+.list	.item2									{width:35px;}
+.list	.item3									{width:80px;}
+.list	.item4									{width:320px;}
+.list	.item5									{width:40px;}
+.list	.item6									{width:40px;}
+.list	.item7									{width:*;}
+
+#list_contents .item3					{text-align:left;}
+#list_contents .item4					{text-align:left;overflow:hidden;}
+
+.list_page										{height:35px;border:0;}
+.list_page ul									{}
+.list_page li									{display:inline-block;margin:-6px 5px 0 0;}
+.list_page li > a							{display:inline-block;padding:7px 0 7px 0;width:30px;border:1px solid #eeeeee;text-align:center;}
+.list_page .on								{background:yellow;}
+.list_search									{height:200px;border:0;border-top:1px solid black;border-bottom:1px solid black;}
+.list_function								{height:30px;padding:5px 0 5px 0;border:0px solid black;}
+.list_function select					{border:0;border-bottom:0px solid ;}
+.list_function .button				{padding:7px;border:0;background:#555555;color:white;}
+.list_function .search				{padding:6px 3px 5px 3px;width:120px;}
+

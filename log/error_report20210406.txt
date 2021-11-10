@@ -1,0 +1,30 @@
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+
+[Err:0]<br/>관리자에게 문의하세요!
+ [ eIpaddress:112.187.232.133| eSession:552188216| file:/process/admin/popup/list_popup.asp| num:-2147217865| eSource:Microsoft OLE DB Provider for SQL Server| eDate:2021-04-06 오후 6:20:20 ]  개체 이름 'dbo.popup'이(가) 유효하지 않습니다.
+exec getPageList '1', '10', '10', ' AA.*																																					,dbo.getPopupThumbnailImage(AA.popup_no)													thumbnail		,dbo.getPopupState(AA.popup_no)																		stateStr		', '						dbo.popup  As AA																									', 'AA.use_yn = ''y''And AA.use_yn = ''y''', 'Order By	AA.order_num desc '
+ [ eIpaddress:112.187.232.133| eSession:552188216| file:/process/admin/popup/list_popup.asp| num:-2147217865| eSource:Microsoft OLE DB Provider for SQL Server| eDate:2021-04-06 오후 6:20:23 ]  개체 이름 'dbo.popup'이(가) 유효하지 않습니다.
+exec getPageList '1', '10', '10', ' AA.*																																					,dbo.getPopupThumbnailImage(AA.popup_no)													thumbnail		,dbo.getPopupState(AA.popup_no)																		stateStr		', '						dbo.popup  As AA																									', 'AA.use_yn = ''y''And AA.use_yn = ''y''', 'Order By	AA.order_num desc '
+ [ eIpaddress:112.187.232.133| eSession:552188216| file:/process/admin/popup/list_popup.asp| num:-2147217865| eSource:Microsoft OLE DB Provider for SQL Server| eDate:2021-04-06 오후 6:20:25 ]  개체 이름 'dbo.popup'이(가) 유효하지 않습니다.
+exec getPageList '1', '10', '10', ' AA.*																																					,dbo.getPopupThumbnailImage(AA.popup_no)													thumbnail		,dbo.getPopupState(AA.popup_no)																		stateStr		', '						dbo.popup  As AA																									', 'AA.use_yn = ''y''And AA.use_yn = ''y''', 'Order By	AA.order_num desc '

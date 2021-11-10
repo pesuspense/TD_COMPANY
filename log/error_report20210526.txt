@@ -1,0 +1,105 @@
+ [ eIpaddress:61.73.48.212| eSession:759193174| file:/process/inquiry/process.asp| num:-2147220975| eSource:| eDate:2021-05-26 오전 11:25:41 ]  The message could not be sent to the SMTP server. The transport error code was 0x80040217. The server response was not available
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
+ [ eIpaddress:61.73.48.212| eSession:759193174| file:/process/inquiry/process.asp| num:-2147220975| eSource:| eDate:2021-05-26 오전 11:25:51 ]  The message could not be sent to the SMTP server. The transport error code was 0x80040217. The server response was not available
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
+ [ eIpaddress:61.73.48.212| eSession:759193174| file:/process/inquiry/process.asp| num:-2147220975| eSource:| eDate:2021-05-26 오전 11:57:03 ]  The message could not be sent to the SMTP server. The transport error code was 0x80040217. The server response was not available
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
+ [ eIpaddress:61.73.48.212| eSession:759193174| file:/process/inquiry/process.asp| num:-2147220975| eSource:| eDate:2021-05-26 오전 11:57:22 ]  The message could not be sent to the SMTP server. The transport error code was 0x80040217. The server response was not available
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
+ [ eIpaddress:61.73.48.212| eSession:775313806| file:/process/inquiry/process.asp| num:-2147220975| eSource:| eDate:2021-05-26 오후 1:14:40 ]  The message could not be sent to the SMTP server. The transport error code was 0x80040217. The server response was not available
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
+ [ eIpaddress:61.73.48.212| eSession:775313806| file:/process/inquiry/process.asp| num:-2147220975| eSource:| eDate:2021-05-26 오후 1:34:15 ]  The message could not be sent to the SMTP server. The transport error code was 0x80040217. The server response was not available
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
+ [ eIpaddress:61.73.48.212| eSession:791313170| file:/process/inquiry/process.asp| num:-2147220975| eSource:| eDate:2021-05-26 오후 3:20:03 ]  The message could not be sent to the SMTP server. The transport error code was 0x80040217. The server response was not available
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+

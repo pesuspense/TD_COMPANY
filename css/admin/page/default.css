@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url('/css/global/normalize.css');
+@import url('/css/global/adminReset.css');
+@import url('/css/global/adminCommon.css');
+@import url('/css/global/adminUI.css');
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||From
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.form_default																		{float:left;width:600px;}
+.form_item_contents textarea										{width:100%;padding:10px;border:0;font-size:11px;height:75px;}
+
+.form_default .filebox input[type="file"]				{position: absolute;width:0;height:0;padding:0;overflow:hidden;border:0;}
+.form_default .filebox label										{display: inline-block;width:110px;height:30px;font-size:14px;padding:7px 0 5px 0;color:#ffffff;vertical-align:middle;background-color:#777777;cursor:pointer;border:1px solid #ebebeb;border-radius:0;text-align:center;}
+.form_default .filebox .upload-name							{display: inline-block;width:400px;height:30px;font-size:14px;padding:5px 0 5px 10px;color:#777777;vertical-align:middle;background-color:#cccccc;border:1px solid #ebebeb;border-radius:0;}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||List
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.list_pageItem												{float:left;width:800px;padding:0 0 0 20px;}
+.list_item_contents										{display:block;width:95%;padding:0 0 0 5%;text-align:left;}
+
+.list_pageItem .list_item_1						{width:20px;}
+.list_pageItem .list_item_2						{width:30px;}
+.list_pageItem .list_item_3						{width:70px;}
+.list_pageItem .list_item_4						{width:290px;}
+.list_pageItem .list_item_5						{width:300px;}
+.list_pageItem .list_item_6						{width:*;}
+#list_pageItem .list_item_4						{text-align:left;color:black;}
+
+.list_pageItem .list_function					{padding:10px 0 0 0;}
+.list_pageItem .list_function .ltItem	{float:left;width:500px;}
+.list_pageItem .list_function .rtItem	{float:right;width:400px;text-align:right;}
+
+
+#list_images ul												{padding:5px;text-align:center;}
+#list_images table										{border:1px solid #cccccc;margin:0 0 5px 0;width:100%;}
+#list_images img											{width:150px;margin:0 10px 0 0;}
+#list_images a												{font-size:11px;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------
+||Side
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/

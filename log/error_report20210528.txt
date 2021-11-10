@@ -1,0 +1,28 @@
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
+
+Insert Into inquiry_default(inquiryNum,type,division,name,phone,email,address,title,reqContents,state)		
+Select																																																																				
+ (Select isNull(max(inquiryNum),999999999) +1 From inquiry_default)																										
+,'top'																																																							
+,''																																																							
+,'강경모'																																																							
+,'010-2530-8691'																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,''																																																							
+,'대기'																																																							
+
